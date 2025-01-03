@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 15% 4%; /* Dark background */
+  --foreground: 220 10% 98%; /* Light foreground for text */
+  --card: 220 20% 13%; /* Dark card background */
+  --card-foreground: 220 10% 98%; /* Light text for cards */
+  --popover: 220 20% 13%; /* Dark popover */
+  --popover-foreground: 220 10% 98%; /* Light text for popovers */
+  --primary: 263 70% 50%; /* Vibrant primary color */
+  --primary-foreground: 220 10% 98%; /* Light text for primary buttons */
+  --secondary: 215 28% 17%; /* Muted secondary */
+  --secondary-foreground: 220 10% 98%;
+  --muted: 220 15% 20%; /* Slightly lighter than dark background */
+  --muted-foreground: 220 10% 60%;
+  --accent: 191 97% 77%;
+  --accent-foreground: 220 20% 10%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 220 10% 98%;
+  --border: 220 15% 20%; /* Borders in muted dark */
+  --input: 220 15% 20%; /* Input backgrounds */
+  --ring: 220 65% 40%;
+}
+
+body {
+  @apply bg-background text-foreground; /* Applies dark background and light text */
+}
+
+.gradient-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500;
+}
+
+.glow {
+  text-shadow: 0 0 10px rgba(148, 0, 255, 0.7), 0 0 20px rgba(148, 0, 255, 0.5);
+}
+
+.neon-border {
+  box-shadow: 0 0 5px rgba(148, 0, 255, 0.5), 0 0 10px rgba(148, 0, 255, 0.3);
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background-color: rgba(31, 41, 55, 0.4); /* Slightly transparent dark for glass */
+}
+
